@@ -1,0 +1,5 @@
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Release\Matematik.exe.config
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Release\Matematik.exe
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Release\Matematik.pdb
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\obj\Release\Matematik.exe
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\obj\Release\Matematik.pdb

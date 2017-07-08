@@ -1,0 +1,18 @@
+D:\depoyedek\rarlaa\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Debug\Matematik.exe.config
+D:\depoyedek\rarlaa\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\obj\Debug\Matematik.exe
+D:\depoyedek\rarlaa\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\obj\Debug\Matematik.pdb
+D:\depoyedek\rarlaa\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Debug\Matematik.exe
+D:\depoyedek\rarlaa\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Debug\Matematik.pdb
+D:\depoyedek\rarlaa\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\obj\Debug\Limit türev denemesi.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Debug\Matematik.exe.config
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\obj\Debug\Matematik.exe
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\obj\Debug\Matematik.pdb
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Debug\Matematik.exe
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\bin\Debug\Matematik.pdb
+D:\Visual Studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\obj\Debug\Limit türev denemesi.csprojResolveAssemblyReference.cache
+C:\Users\Furkan\Desktop\Programming Assets\Visual Studio 2013\Projects\trv\ConsoleApplication9\bin\Debug\Matematik.exe.config
+C:\Users\Furkan\Desktop\Programming Assets\Visual Studio 2013\Projects\trv\ConsoleApplication9\obj\Debug\Matematik.exe
+C:\Users\Furkan\Desktop\Programming Assets\Visual Studio 2013\Projects\trv\ConsoleApplication9\obj\Debug\Matematik.pdb
+C:\Users\Furkan\Desktop\Programming Assets\Visual Studio 2013\Projects\trv\ConsoleApplication9\bin\Debug\Matematik.exe
+C:\Users\Furkan\Desktop\Programming Assets\Visual Studio 2013\Projects\trv\ConsoleApplication9\bin\Debug\Matematik.pdb
+C:\Users\Furkan\Desktop\Programming Assets\Visual Studio 2013\Projects\trv\ConsoleApplication9\obj\Debug\Limit türev denemesi.csprojResolveAssemblyReference.cache
