@@ -128,7 +128,7 @@ namespace ConsoleApplication9
             return uluSadelestirme(uluSade);
 
         }
-        public UluDegisken[] denkHazırlayıcı(UluDegisken[] a)//bu sikim sonik bişey dokunmanı önermem neyi hazırlıyosa artiz gavat
+        public UluDegisken[] denkHazırlayıcı(UluDegisken[] a)//bunu kullanma ne oldugu bilinmiyor kullancaksan test et
         {
             for (int i = 0; i < a.Length; i++)
             {
@@ -139,11 +139,11 @@ namespace ConsoleApplication9
             }
             return a;
         }
-        public UluDegisken[] uluDegiskenDiziAyırıcı(string a)//en baba master-piece aha işte bu iyi bak çünkü zamanında iyi kafa patlattın buna
+        public UluDegisken[] uluDegiskenDiziAyırıcı(string a)// en iyisi bu ,basit token parser
         {
-            a = bosluklarıYalarun(a);//boşlukları bi silmek lazım tabe :DD
+            a = bosluklarıYalarun(a);//boşlukları bi silmek gerekir
             UluDegisken[] ayırdım = new UluDegisken[kacTaneVar(a, isaretler)+1];
-            
+
             bool ustlumusunSen = false;
             int baslat = 0;
             bool ilkdenklemmi = true;
@@ -157,7 +157,7 @@ namespace ConsoleApplication9
                 bool isaretAldımmı = false;
 
 
-                ayırdım[i] = new UluDegisken();//tek tekmi tanımlıycamı sandınız lan ?
+                ayırdım[i] = new UluDegisken();
 
                 for (int j = baslat; j < a.Length; j++)
                 {
@@ -173,7 +173,7 @@ namespace ConsoleApplication9
                             ilkdenklemmi = false;
                             isaretAldımmı = true;
                         }
-                        else if(a[j]!=' ')//aga bu demekki katlıkısımmıs
+                        else if(a[j]!=' ')//demekki katlıkısımmıs
                         {
                             katSayı[ta] = a[j] - 48;
                             ta--;
@@ -182,9 +182,9 @@ namespace ConsoleApplication9
                         }
 
                     }
-                    else //sayı degilse işaretdir yada üst işaretim :) unutmadan bide degisken olma ihtimali var bura daha karısık hele önce burdan yazmak lazım
+                    else //sayı degilse işaretdir yada üst işaretim unutmadan bide degisken olma ihtimali var bura daha karısık önce burdan yazmak lazım
                     {
-                        if (isaretmi(a[j])) //eger temel bir isaretimse atarım ben bunu cebe
+                        if (isaretmi(a[j])) //eger temel bir isaretimse alalım
                         {
                             ustlumusunSen = false;
                             if (ilkdenklemmi)
@@ -229,7 +229,7 @@ namespace ConsoleApplication9
                             esitliksonu = true;
                             break;
                         }
-                        else//oda degilse bu tamkısım olsa gerek D:D:
+                        else//oda degilse bu tamkısım olsa gerek
                         {
                             ayırdım[i].tamKısım = a[j];
                         }
@@ -261,7 +261,7 @@ namespace ConsoleApplication9
 
             return ayırdım;
         }
-        public UluDegisken[] DenklemCözümleyici(UluDegisken[] unknowns)//bokumu çözümle ama harbi işe yarıyor 
+        public UluDegisken[] DenklemCözümleyici(UluDegisken[] unknowns)//bokumu çözümle ama harbi işe yarıyor
         {
             UluDegisken[] ayırıcı = new UluDegisken[unknowns.Length];
             int indx = 0;
@@ -327,7 +327,7 @@ namespace ConsoleApplication9
 
             return uluToplam;
         }
-        public UluDegisken uluIllalahEttirici(UluDegisken ayırdım)//illallah ettirir yani tam tersine döner işaretler :) denklem çözmenin ilk adımı gibi bişe
+        public UluDegisken uluIllalahEttirici(UluDegisken ayırdım)//illallah ettirir yani tam tersine döner işaretler ,basit x i yanlız bırakma durumu
         {
             if (ayırdım.isaretim == '+')
             {
@@ -349,12 +349,12 @@ namespace ConsoleApplication9
         }
         #endregion
         #region String
-        public string turev(string dx, string dt)//kısaltma lan amk ne ugrasmısız
+        public string turev(string dx, string dt)//kısaltma
         {
 
             return uluDegiskenYazdır(uluSadelestirme(uluDegiskenToplamTurev(uluDegiskenDiziAyırıcı(dx), uluDegiskenDiziAyırıcı(dt))));
         }
-        public string uluDegiskenYazdır(UluDegisken[] a)//okadar çözümledik bari yazsın bırakda
+        public string uluDegiskenYazdır(UluDegisken[] a)//o kadar çözümledik bari yazsın
         {
             String yolla = "";
             bool isaretbasammı = false;
@@ -396,7 +396,7 @@ namespace ConsoleApplication9
 
             return yolla;
         }
-        public string parantezIci(string str)//eskisinin yenisini yazdık tap taze oldu parantez icini yollamakla kalmaz artık çözüyorda öyle yolluyor gerci bundada bitmeyen kısım var en kısa zamanda bak
+        public string parantezIci(string str)//eskisinin yenisini yazdık tap taze oldu parantez icini yollamakla kalmaz artık çözüyorda öyle yolluyor,bitmeyen kısım var dikkat et
         {//parantez icini yollar
             string dy = null;
             if (parantezSayısı(str) == 0) return str;
@@ -417,16 +417,16 @@ namespace ConsoleApplication9
                 //Console.WriteLine(str + "\n" + dy);
                 parantezIci(str);
             }
-        
-            
 
-                
-            
-            
-           
+
+
+
+
+
+
             return str;
         }
-        public string bosluklarıYalarun(string input)//boşlukları yalar
+        public string bosluklarıYalarun(string input)//boşlukları siler
         {
             return input.Trim().Replace(" ", string.Empty);
         }
@@ -518,7 +518,7 @@ namespace ConsoleApplication9
             }
             return output;
         }
-        private int[] parantezci(string str)//sadece kısaltma 
+        private int[] parantezci(string str)//sadece kısaltma
         {
             return rankParantez(kokparantez(str));
         }
@@ -569,7 +569,7 @@ namespace ConsoleApplication9
             {
 
                 if (min > output[i]) { min = output[i]; mindex = i; }
-                
+
             }
             return mindex;
         }
@@ -579,7 +579,7 @@ namespace ConsoleApplication9
             if (parantezSayısı(str) == 0) return null;
             int [,] p =new int [parSayısı, 2];
             int a = 0;
-            
+
             for (int i = 0; i < str.Length; i++)
             {
                 if (str[i] == '(')
@@ -588,7 +588,7 @@ namespace ConsoleApplication9
                     p[a, 1] = -1;
                     a++;
                 }
-                
+
                 int b = a;
                 if (b >= p.GetLength(0)) b = b - 1;
                 if (str[i] == ')')
@@ -597,7 +597,7 @@ namespace ConsoleApplication9
                     p[b, 1] = i;
                 }
                 }
-            
+
             return p;
         }
         private int findAndSlain(int[] index, int val, int queue)//verinin dizi üzerinde kaçıncı tekrarına kadar arayıp index döndürecekmiş
@@ -614,7 +614,7 @@ namespace ConsoleApplication9
             }
             return -1;
         }
-        private int findAndSlain(String str, char bul, int index)//verilen cümle üzerinde kelime arar ...
+        private int findAndSlain(String str, char bul, int index)//verilen string üzerinde kelime arar ...
 
         {
             int kacıncı = 0;
@@ -780,7 +780,7 @@ namespace ConsoleApplication9
             }
             return count;
         }
-        private int kacTaneVar(String str, char toCheck)//aynı bokların laciverti
+        private int kacTaneVar(String str, char toCheck)
         {
             int count = 0;
             for (int i = 0; i < str.Length; i++)
@@ -837,7 +837,7 @@ namespace ConsoleApplication9
 
             return false;
         }
-        private bool isInteger(char chr)//integer bir sayımı diye kontrol ediyoruz
+        private bool isInteger(char chr)//bir sayımı diye kontrol ediyoruz
         {
             if (Char.IsNumber(chr))
             {
@@ -852,7 +852,7 @@ namespace ConsoleApplication9
         }
 
         #region kullanma
-        public double exDenkSln(UluDegisken[] unknowns)//bunlar bug dolu deger veriyormu veriyor ama sen yinede yenisini yaz kullanma bunu
+        public double exDenkSln(UluDegisken[] unknowns)//bunlar bug dolu ,ya temizle yada hiç kullanma //denklem çözümleyici v0.1 fonksiyonu
         {
             //sadece tek x olursa gecerli oluyor :& daha genel bisey yazmam lazım :/
             unknowns = denkHazırlayıcı(unknowns);
@@ -892,7 +892,7 @@ namespace ConsoleApplication9
             // value *= -1;
             return value;
         }
-        public void DenklemNasılCozulur(UluDegisken[] unknowns)//bu üsttekinden daha sikik bişey siktir et sana fonksiyon mu yok
+        public void DenklemNasılCozulur(UluDegisken[] unknowns)//deneme amaçlı oluşturulmuş karşılaştırıcı bir fonksiyon
         {
             unknowns = uluSadelestirme(unknowns);
 
@@ -908,9 +908,8 @@ namespace ConsoleApplication9
         #endregion
         #region Kendime Notlar
         /*
-        Bu sikik parantez önemi icin 1 gününü harcadıgını sakın unutma zor olacagını biliyorduk
-        2. günde görüsmek üzere
-        denklem çözümleyici v2.01 beta 
+
+        denklem çözümleyici v2.01 beta
 
 
 
@@ -918,4 +917,3 @@ namespace ConsoleApplication9
         #endregion
     }
 }
-

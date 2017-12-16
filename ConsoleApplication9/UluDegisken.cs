@@ -43,7 +43,7 @@ namespace ConsoleApplication9
         }
         public UluDegisken(int p1,char p2,int p3)
     {
-        
+
 this.katlıKısım = p1;
 this. tamKısım= p2;
 this.uluKısım= p3;
@@ -77,7 +77,7 @@ this.uluKısım= p3;
                    uluToplam.uluKısım = b.uluKısım;
                }
            }
-               
+
            else
            {
                uluToplam.isaretim = a.isaretim;
@@ -92,9 +92,9 @@ this.uluKısım= p3;
                        uluToplam.isaretim = ' ';
                        uluToplam.tamKısım= ' ';
                        uluToplam.uluKısım=1;
-                      
+
                    }
-                   
+
                    else{
                        uluToplam.katlıKısım = b.katlıKısım - a.katlıKısım;
                    }
@@ -109,7 +109,7 @@ this.uluKısım= p3;
                    uluToplam.katlıKısım = b.katlıKısım;
                    uluToplam.uluKısım = b.uluKısım;
                }
-           
+
 
            }
            if (uluToplam.uluKısım == 0) uluToplam = uluSıfırlayıcı();
@@ -136,7 +136,7 @@ this.uluKısım= p3;
               uluToplam.katlıKısım=a.katlıKısım*b.katlıKısım;
               uluToplam.uluKısım=a.uluKısım+b.uluKısım;
             }
-            
+
             return uluToplam;
         }
         public static UluDegisken operator ^(UluDegisken a, int b)
@@ -160,4 +160,3 @@ this.uluKısım= p3;
 
     }
     }
-

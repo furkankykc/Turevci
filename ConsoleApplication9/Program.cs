@@ -11,13 +11,13 @@ namespace ConsoleApplication9
 
     class Program
     {
-        
+
 
 
         static void Main(string[] args)
         {
             string a, b, sonuc;
-   
+
             LimitTürevIntegral lmt = new LimitTürevIntegral();
             //   int[] sayı = { 1, 2, 3 ,0,0} ;
             //  Console.Write("türev icin 1 e denklem çözümü icin 2 ye basınız");
@@ -56,7 +56,7 @@ namespace ConsoleApplication9
                     if (b == "exit" || a == "exit") break;
                 }
                 else
-                { 
+                {
 
                     Console.Write("Çözümlemek istediginiz denklemi giriniz : ");
                     a = Console.ReadLine();
@@ -65,7 +65,7 @@ namespace ConsoleApplication9
                     Console.WriteLine("x={0}", lmt.exDenkSln((lmt.uluDegiskenDiziAyırıcı(a))));
                     Console.ReadLine();
                 }
-          
+
             }
         }
 
